@@ -146,4 +146,8 @@ Distribuito con licenza MIT, vedi il file [LICENSE](./LICENSE).
 
 ---
 
+
+Vuoi contribuire? Leggi CONTRIBUTING.md.
+
 _Fatta pi siciliani, cu l'aiutu di tutti._ 🍋
+
