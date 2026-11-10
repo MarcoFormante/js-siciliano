@@ -1,0 +1,66 @@
+{
+  "name": "js-siciliano",
+  "version": "0.0.2",
+  "description": "JavaScript con i nomi in siciliano: API del DOM concatenabili e tipizzate",
+  "keywords": [
+    "dom",
+    "javascript",
+    "sicilian",
+    "siciliano",
+    "sicilianu",
+    "typescript"
+  ],
+  "homepage": "https://github.com/author/library#readme",
+  "bugs": {
+    "url": "https://github.com/author/library/issues"
+  },
+  "license": "MIT",
+  "author": "Marco Formante <formante.marco@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/author/library.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "./dist/globale.mjs"
+  ],
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./globale": {
+      "types": "./dist/globale.d.mts",
+      "import": "./dist/globale.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "bumpp": "^11.1.0",
+    "happy-dom": "^21.0.3",
+    "typescript": "^7.0.2",
+    "vite-plus": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.9.1",
+      "onFail": "download"
+    }
+  }
+}

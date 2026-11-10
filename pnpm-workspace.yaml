@@ -1,0 +1,13 @@
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@1.0.0
+  vite-plus: 1.0.0
+minimumReleaseAgeExclude:
+  - "@formante/js-siciliano@0.0.2"
+overrides:
+  js-siciliano: "link:"
+  vite@*: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"

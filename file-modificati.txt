@@ -1,0 +1,3 @@
+cambiato alcuni types di funzioni,
+aggiunto tests
+
